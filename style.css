@@ -13,7 +13,7 @@
 .home-sec {
     height: 50em;
     width: 76em;
-    padding-top: 5.938em;   
+    padding-top: 9em;   
     padding-left: 5.938em;
 
 }
@@ -25,48 +25,82 @@
 }
 
 .contact-sec {
-    height: 550px;
-    width: 1000px;
+    height: 200px;
+    width: 100%;
     padding-left: 95px;
+    background-color: aliceblue;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+/* .contact-sec ul li {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    justify-content:space-evenly;
+    font-size: 1.25em;
+
+} */
+
+table, th, td {
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+    width: 70%;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-align: center;
+    table-layout: fixed;
+    color:#CBC3E3;
+
+
 }
 
 h2 {
     font-family: hang;
-    font-size: 55px;
-    display: inline;
+    font-size: 60px;
+    display: inline-block;
     color: #CBC3E3;
     top: 0; 
-    padding: 0px 0;   
-    padding-left: 95px; 
+    padding-left: 3.5em; 
 }
 
-.nav {
-
+#navbar {
+    position: fixed;
+    /* top: 0; */
+    transition: top 0.3s;
     width: 85%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding-right: 95px; */
-    padding-right: 5.9em;
-}
-
-.nav ul li {
-    list-style: none;
     display: inline-block;
-    margin: 0 1.5em;
-    /* padding: 35px 0; */
+
+  }
+  
+  #navbar ul li {
+    display: inline-block;
+    color: #CBC3E3;
+    text-align: center;
     padding: 2.1em 0;
-
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 1.5em;
+    /* margin-left: 5.1em; */
+    float: right;
 }
-
-.nav ul li a{
+  
+  #navbar ul li a{
     text-decoration: none;
     color: #CBC3E3;
     font-size: 1.25em;
 
     
 }
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
 h3 {
     color: #CBC3E3;
@@ -78,13 +112,14 @@ h3 {
 }
 
 .abouta {
-padding: 30px;
-font-size: 20px;
-margin-left: 109px;
-width: 500px;
-word-wrap: normal;
+    padding: 30px;
+    font-size: 20px;
+    margin-left: 109px;
+    width: 500px;
+    word-wrap: normal;
 
 }
+
 p1 {
     font-size: 20px;
     padding: 30px;
@@ -99,6 +134,7 @@ p1.a {
     padding: 1.875em;
     flex-direction: column;
 }
+
 img.a {
     position: relative;
     width: 350px;
@@ -315,4 +351,4 @@ button[type="submit"] {
         opacity: 0;
         pointer-events: none;
     }
-} */ */
+} */ 
