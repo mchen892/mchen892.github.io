@@ -15,7 +15,7 @@ import friends from '../public/friends.jpg'
 import skate from '../public/skate.jpg'
 import wecode from '../public/wecode.jpg'
 import MobileNav from '../components/sideNavBar';
-import HomeImages from '@/components/HomeImage';
+import HomeImages from '../components/homeImage';
 
 
 export default function Home() {

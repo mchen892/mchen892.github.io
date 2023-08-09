@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import MobileNav from "../components/SideNavBar";
-import FooterAll from "../components/Footer";
+import MobileNav from "../components/sideNavBar";
+import FooterAll from "../components/footer";
 import esw from '../public/esw.png';
 import cssa from '../public/cssa_website.png';
 import arduino from '../public/arduino.png';
 import website from '../public/personal.jpg';
-import ProjectTemp from '@/components/projectTemp';
+import ProjectTemp from '../components/projectTemp';
 
 export default function Home() {
   return (
