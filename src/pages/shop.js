@@ -2,13 +2,13 @@ import Head from 'next/head'
 import MobileNav from "../../components/sideNavBar";
 import FooterAll from "../../components/footer";import Link from 'next/link'
 import Image from 'next/image'
-import birb from '../../public/birb.jpg'
-import birb2 from '../../public/birb2.jpg'
-import birb3 from '../../public/birb3.jpg'
-import cherry from '../../public/cherry.jpg'
-import soon from '../../public/soon.png'
-import staw from '../../public/staw.jpg'
-import bear from '../../public/bear.jpg'
+import birb from '../../public/images/birb.jpg'
+import birb2 from '../../public/images/birb2.jpg'
+import birb3 from '../../public/images/birb3.jpg'
+import cherry from '../../public/images/cherry.jpg'
+import soon from '../../public/images/soon.png'
+import staw from '../../public/images/staw.jpg'
+import bear from '../../public/images/bear.jpg'
 
 export default function Home() {
     return (

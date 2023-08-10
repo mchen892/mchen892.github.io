@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import MobileNav from "../../components/sideNavBar";
 import FooterAll from "../../components/footer";
-import esw from '../../public/esw.png';
-import cssa from '../../public/cssa_website.png';
-import arduino from '../../public/arduino.png';
-import website from '../../public/personal.jpg';
+import esw from '../../public/images/esw.png';
+import cssa from '../../public/images/cssa_website.png';
+import arduino from '../../public/images/arduino.png';
+import website from '../../public/images/personal.jpg';
 import ProjectTemp from '../../components/projectTemp';
 
 export default function Home() {

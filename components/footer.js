@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import linkedin from '../public/linkedin.png'
-import github from '../public/github.png'
+import linkedin from '../public/images/linkedin.png'
+import github from '../public/images/github.png'
 
 function FooterAll() {
     return (
