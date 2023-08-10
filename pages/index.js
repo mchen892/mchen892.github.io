@@ -154,38 +154,6 @@ export default function Home() {
                 title={"Hanging with friends"}
               />
             </div>
-
-          {/* </div> */}
-          {/* <div className='flex flex-col-reverse lg:flex-row'>
-            <div className='flex flex-col lg:flex-row lg:p-2 lg:ml-40'>
-              <Image className='mx-auto pt-3 pb-3 lg:p-5 lg:mx-0' src={prettypic} />
-              <Image className='mx-auto pt-3 pb-3 lg:p-5 lg:mx-0' src={tree} />
-              <Image className='mx-auto pt-3 pb-3 lg:p-5 lg:mx-0' src={snow} />
-            </div> */}
-          {/* <div className='mx-auto'>
-              Taking pretty photos
-            </div> */}
-          {/* </div> */}
-          {/* <div className='flex flex-col-reverse lg:flex-row'>
-            <div className='flex flex-col lg:flex-row lg:p-2 lg:ml-40'>
-              <Image className='mx-auto pt-3 pb-3 lg:p-5 lg:mx-0' src={unami} />
-              <Image className='mx-auto pt-3 pb-3 lg:p-5 lg:mx-0' src={cake} />
-              <Image className='mx-auto pt-3 pb-3 lg:p-5 lg:mx-0' src={shrimp} />
-            </div>
-            <div className='mx-auto'>
-              Foodie
-            </div>
-          </div> */}
-          {/* <div className='flex flex-col-reverse lg:flex-row'>
-            <div className='flex flex-col lg:flex-row lg:p-2 lg:ml-40'>
-              <Image className='mx-auto pt-3 pb-3 lg:p-5 lg:mx-0' src={friends} />
-              <Image className='mx-auto pt-3 pb-3 lg:p-5 lg:mx-0' src={skate} />
-              <Image className='mx-auto pt-3 pb-3 lg:p-5 lg:mx-0' src={wecode} />
-            </div>
-            <div className='mx-auto'>
-              Hanging with friends
-            </div>
-          </div> */}
         </div>
         <FooterAll />
       </main >
