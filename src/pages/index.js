@@ -28,7 +28,7 @@ export default function Home() {
       </Head>
       <main>
         <div id='top' className='lg:h-screen'>
-          <MobileNav />
+          {/* <MobileNav /> */}
           <div className='flex flex-col text-center lg:flex lg:flex-row-reverse '>
             <div className='mx-auto mt-100'>
               <Image className='sm:mx-auto mt-14 mr-7' src={me} />
