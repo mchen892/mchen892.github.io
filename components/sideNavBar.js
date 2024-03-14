@@ -12,7 +12,7 @@ const MobileNav = () => {
     <nav className='flex flex-col lg:flex-row lg:justify-between lg:items-center lg:mx-6 mt-8'>
       <div className='flex flex-row justify-between'>
         <h2>
-          <Link href="/" className='text-5xl'>Maggie</Link>
+          <Link href="/" className='text-3xl'>Maggie</Link>
         </h2>
 
         {!isLargeScreen && (
@@ -38,20 +38,17 @@ const MobileNav = () => {
             <Link href="/project" className='text-xl hover:underline'>Project</Link>
           </li>
           <li className='lg:pr-8'>
+            <Link href="/journal" className='text-xl hover:underline'>Journal</Link>
+          </li>
+          <li className='lg:pr-8'>
             <Link
-              href="https://drive.google.com/file/d/1t02eB1pcBu-1EN05543Psm-21befE34c/view?usp=sharing"
+              href="https://drive.google.com/file/d/1iBUzkwAhd-p5IWa-hA6icnchRo3jUhSS/view?usp=sharing"
               className='text-xl hover:underline'
               target="_blank"
               rel="noopener noreferrer"
             >
               Resume
             </Link>
-          </li>
-          <li className='lg:pr-8'>
-            <Link href="/shop" className='text-xl hover:underline'>Shop</Link>
-          </li>
-          <li className='lg:pr-8'>
-            <Link href="/blog" className='text-xl hover:underline'>Journal</Link>
           </li>
         </ul>
       )}
