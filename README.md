@@ -1,6 +1,12 @@
 ## Personal Website
-Website Link:[maggiechen.org](https://www.maggiechen.org/)
+Website Link: [maggiechen.org](https://www.maggiechen.org/)
 
-This is my personal website, where I will be displaying my projects that I have worked on/currently working on.
+March 14, 2024 - Continued my website, fixed the project page, redesigned my website, and added a new resume
+- Need to fix the margin of the project page & possibly display it better
+- Need to fix the index page
+- Reformat & update journal
 
-Technology Used: React, Tailwind, html, css
+
+This is my website, where I will be displaying the projects that I have worked on/currently working on.
+
+Technology Used: NextJS, Tailwind, HTML, CSS
