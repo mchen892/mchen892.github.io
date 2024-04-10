@@ -12,7 +12,7 @@ const MobileNav = () => {
     <nav className='flex flex-col lg:flex-row lg:justify-between lg:items-center lg:mx-6 mt-8'>
       <div className='flex flex-row justify-between'>
         <h2>
-          <Link href="/" className='text-3xl'>Maggie</Link>
+          <Link href="/" className='text-3xl'>MC</Link>
         </h2>
 
         {!isLargeScreen && (

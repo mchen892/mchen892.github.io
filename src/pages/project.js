@@ -26,10 +26,8 @@ export default function Home() {
               <div className="project-view">
                 <ProjectTemp link='https://www.maggiechen.org/'img={website} altmessage="Personal website image" title="Personal Website" caption="Used NextJS, Tailwind, HTML, and CSS" />
                 <ProjectTemp img={esw} altmessage="Esw website image" title="Engineer's For Sustainability Website" caption="Used Plotly Dash, Bootstrap components, CSS, Figma for the website. Used pandas for fumehood automations." />
-                <ProjectTemp img={cssa} altmessage="Cssa website image" title="Cornell Chinese Scholars Association Website" caption="Used HTML, CSS, and JS to create this website" />
                 <ProjectTemp link='https://github.com/mchen892/led-clock'img={arduino} altmessage="Arduino LED Clock" title="Arduino LED Clock" caption="Used Arduino to create this" />
                 <ProjectTemp link='https://survival-guide.netlify.app/ 'img={bobatalk} altmessage="BobaTalk website image" title="BobaTalk's College Survival Website" caption="Used React and CSS" />
-                <ProjectTemp img={esw} altmessage="Trading bot image" title="Discord Trading Analyzing Bot" caption="Used Python, Yahoo Finances, Discord" />
                 <ProjectTemp link='https://github.com/mchen892/hungry-line' img={hungryline} altmessage="Hungry Line app image" title="Hungry Line App" caption="Used React Native, Expo, and Firebase" />
               </div>
             </section>
