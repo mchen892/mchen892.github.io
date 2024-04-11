@@ -12,13 +12,10 @@ body {
   margin-right: 2em; */
 }
 
-/* In your global.css or a CSS module */
 .hover\:purple-shadow:hover {
   box-shadow: 0 10px 15px -3px rgba(201, 194, 207, 1), /* Adjust the rgba values to your chosen color */
               0 4px 6px -2px rgba(128, 90, 213, 0.25); /* Same here */
 }
-
-
 
 nav h2 {
   padding: 2em;
@@ -31,8 +28,17 @@ nav h2 {
 }
 
 .title-name {
-  margin-top: 1em;
-  font-size: 3em;
+  margin-top: 2em;
+  font-size: 4em;
+  text-align: left;
+  margin-left: 4em;
+}
+
+.title-long-sub {
+  margin-left: 4em;
+  padding-left: 13em;
+  font-size: 1.5em;
+  padding-top: 1em;
 }
 
 .title-sub {
@@ -47,14 +53,26 @@ nav h2 {
 .arrow {
   padding-top: 5em;
 }
+
 .current {
-  background-color: #C9C2CF;
-  height: 20em;
-  margin-top: 5em;
+  background-color: #f3e4e2;
+  height: 40em;
+  width: 100%;
+}
+
+.current-text {
+  margin-left: 3em; 
+  padding-top: 1em;
+  color:#363636;
+}
+
+.current-span {
+  color: #864d87;
 }
 
 .current li {
-  padding: 5px;
+  padding-left: 2em;
+  padding-bottom:1.5em;
 }
 
 .me {
@@ -76,3 +94,12 @@ footer {
   flex-wrap: wrap;
   justify-content: left;
 }
+
+@media (max-width: 1024px) { 
+  .title-name {
+    margin-top: 2em;
+    font-size: 3em;
+    text-align: center;
+    margin-left: 0;
+  }
+} 

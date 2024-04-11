@@ -42,7 +42,7 @@ const MobileNav = () => {
           </li>
           <li className='lg:pr-8'>
             <Link
-              href="https://drive.google.com/file/d/1iBUzkwAhd-p5IWa-hA6icnchRo3jUhSS/view?usp=sharing"
+              href="https://drive.google.com/file/d/10BMkDdfbjDAxB24SR4mfauQoslj8Ob-O/view?usp=sharing"
               className='text-xl hover:underline'
               target="_blank"
               rel="noopener noreferrer"
