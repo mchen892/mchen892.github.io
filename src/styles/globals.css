@@ -50,8 +50,23 @@ nav h2 {
   padding-right: .2em;
 }
 
-.arrow {
-  padding-top: 5em;
+.table {
+  display: table;
+  width: 100%;
+  /* height: 100vh; This makes the table the height of the viewport */
+  position: absolute;
+  bottom: 0; /* This positions your table at the bottom of the parent */
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: bottom; /* This aligns your cell to the bottom */
+  text-align: center; /* This centers your content horizontally */
+}
+
+.content {
+  display: inline-block; /* This allows the inner content to be sized by its content */
+  margin: 0 auto; /* Additional horizontal centering if needed */
 }
 
 .current {
@@ -95,6 +110,58 @@ footer {
   justify-content: left;
 }
 
+.about-me-part {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+.about-me-photo {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  width: 30em;
+}
+
+@media (min-width: 1024px) { 
+  .curr-text {
+    padding-left: 10em;
+  }
+
+  .current li {
+    padding-left: 19em;
+    font-size: 1rem;
+  }
+
+  .about-me-section {
+    padding-left: 10em;
+    padding-top: 2em;
+  }
+
+  .about-me-text {
+    padding-left: 0em;
+    padding-right: 4em;
+    width: 40em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .about-me-photo {
+    padding-top: 5em;
+    padding-bottom: 7em;
+    width: 30em;
+    /* padding-right:5em; */
+  }
+
+  .about-me-part {
+    display: flex;
+    flex-direction: row;
+  }
+} 
+
+
 @media (max-width: 1024px) { 
   .title-name {
     margin-top: 2em;
@@ -102,4 +169,15 @@ footer {
     text-align: center;
     margin-left: 0;
   }
+
+  .current {
+    border-radius: 20px;
+  };
+
+  .about-me-photo {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  
 } 

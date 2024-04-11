@@ -19,7 +19,7 @@ import React, { useState, useEffect } from "react";
 import RotatingText from "@/components/rotate";
 import { useMediaQuery } from "react-responsive";
 import { Island_Moments } from "next/font/google";
-import { BsArrowDown } from "react-icons/bs";
+import { BsAlignBottom, BsArrowDown } from "react-icons/bs";
 import Resumetext from "@/components/resume_text";
 
 export default function Home() {
@@ -37,7 +37,6 @@ export default function Home() {
       <main>
         <section className="h-full" style={{ height: "100vh" }}>
           <MobileNav />
-
           <section className="h-full w-full font-serif text-general">
             <div className="flex flex-col h-full">
               <h1 className="title-name font-bold text-light-purp-text">
@@ -54,16 +53,29 @@ export default function Home() {
                 </div>
               )}
               {isLargeScreen && (
-                <p className="title-long-sub">
-                  a software engineer, creator, foodie, fashion enthusiast,
-                  artist
-                </p>
+                <div>
+                  <p className="title-long-sub">
+                    a software engineer, creator, foodie, fashion enthusiast,
+                    artist
+                  </p>
+                </div>
               )}
             </div>
-            <div style={{ marginTop: "30em" }}>
-              <div className=" flex flex-col justify-center items-center">
-                <p className="text-center">scroll for more</p>
-                <BsArrowDown size={45} className="mt-4" />
+
+            <div class="table">
+              <div class="table-cell">
+                <div class="content">
+                  <p>scroll for more</p>
+                  <BsArrowDown
+                    size={45}
+                    style={{
+                      marginRight: "auto",
+                      marginLeft: "auto",
+                      marginTop: "1em",
+                      marginBottom: "1.5em",
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </section>
@@ -71,14 +83,14 @@ export default function Home() {
 
         <section>
           <div className="current">
-            <div className="current-text text-wrap ml-3">
+            <div className="current-text text-wrap">
               <h1
-                className="text-light-purp-text"
+                className="text-light-purp-text curr-text"
                 style={{ fontSize: "1.3em", paddingBottom: ".5em" }}
               >
                 <strong>Currently... </strong>
               </h1>
-              <Resumetext 
+              <Resumetext
                 position="Incoming Fullstack Developer Intern"
                 company="Verizon"
               />
@@ -86,13 +98,13 @@ export default function Home() {
                 position="Software Engineer"
                 company="Engineering For Sustainability World"
               />
-                <li>
-                  Creating a fumehood dashboard for Cornell for them to become
-                  more Sustainable
-                </li>
+              <li>
+                Creating a fumehood dashboard for Cornell for them to become
+                more Sustainable
+              </li>
 
               <h1
-                className="text-light-purp-text text-xl"
+                className="text-light-purp-text text-xl curr-text"
                 style={{
                   paddingTop: ".5em",
                   fontSize: "1.3em",
@@ -128,72 +140,115 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section>
-          <div> 
-            <h1>About me! </h1>
-            <p> </p>
-          </div>
-        </section> */}
-        {/*           
-          
-            <div className="mx-auto ">
-              <h2>About me!</h2>
-              <p>
-                I&apos;m currently a junior majoring in Information Science with
-                a concentration in Interactive Technology and a minor in
-                Computer Science at Cornell University. I have a lot of interest
-                in a variety of things, and I&apos;m constantly exploring new
-                interests. I&apos;m passionate about social impact and
-                developmental psychology. I&apos;m also interested in ML/AI
-                while also dabbling in Front-end Design. This website will be
-                mainly used for my interests and my portfolio.
-              </p>
-              <p className="coffee lg:pt-20 lg:pb-3 lg:text-sm">
-                <Link
-                  href="https://calendly.com/mchen892/bobatalks"
-                  target="_blank"
-                >
-                  <span className="hover:underline">
-                    Book a coffee chat with me ☕️
-                  </span>
-                </Link>
-              </p>
-              <Image src={me}></Image>
+        <section>
+          <div className="about-me-part">
+            <div className="about-me-photo">
+              <Image src={me} className=""></Image>
+            </div>
+
+            <div
+              style={{
+                paddingTop: "2em",
+                marginLeft: "3em",
+                marginRight: "3em",
+                wordWrap: "break-word",
+              }}
+            >
+              <h1
+                className="text-light-purp-text text-xl about-me-section"
+                style={{ fontSize: "1.3em" }}
+              >
+                {" "}
+                <strong>About me!</strong>
+              </h1>
+              <div className="text-m">
+                <p className="about-me-text">
+                  I became invested in creating and building diy crafts ever
+                  since I was little, engaging in various activities to fill the
+                  long days at my family's restaurant. In high school, I wanted
+                  to find a career path that allowed me to create, so I decided
+                  to explore entrepreneurship because I thought it would allow
+                  me to make a social impact on the world by creating things
+                  that would help others, so I decided to get my associates in
+                  Business at my local community college with a program that my
+                  high school was in.
+                </p>
+                <p className="about-me-text">
+                  I&apos;m a current junior at{" "}
+                  <Link href="https://infosci.cornell.edu/" target="_blank">
+                    <span style={{ textDecoration: "underline" }}>
+                      Cornell University
+                    </span>
+                  </Link>{" "}
+                  studying information science with a concentration in
+                  Interactive technology with a minor in computer science.
+                </p>
+                <p className="about-me-text">
+                  And this summer, I&apos;m currently an incoming{" "}
+                  <Link
+                    href="https://www.verizon.com/fullstack"
+                    target="_blank"
+                  >
+                    <span style={{ textDecoration: "underline" }}>
+                      fullstack developer at Verizon
+                    </span>{" "}
+                  </Link>
+                  .
+                </p>
+                <p className="about-me-text">
+                  On campus, I&apos;m a software engineer that is creating a
+                  fumehood dashboard for Cornell that will help reduce energy
+                  usuage with{" "}
+                  <Link href="https://esw.org" target="_blank">
+                    <span style={{ textDecoration: "underline" }}>
+                      Engineering for Sustainability World (ESW)
+                    </span>
+                  </Link>
+                </p>
+                <div style={{ paddingBottom: "3em" }}>
+                  <Link
+                    href="https://topmate.io/maggiechen"
+                    target="_blank"
+                    className="about-me-text"
+                  >
+                    <span className="hover:underline">
+                      Book a coffee chat with me ☕️
+                    </span>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
-        <div>
+        </section>
 
-        <div
-          id="purple"
-          className="current mx-auto lg:p-10 lg:pb-20 lg:text-xl"
-        >
-          <div className="mx-auto ">
+        {/* <div className="mx-auto ">
             <h2 className="text-center text-xl">
               I like to do almost everything
-            </h2> */}
-        {/* <HomeImages
+            </h2>
+        <HomeImages
                 img={prettypic}
                 img2={friends}
                 img3={shrimp}
                 altmessage={"picture of cornell"}
                 altmessage2={"picture of tree"}
                 altmessage3={"picture of snow"}
-              /> */}
+              />
+        </div> */}
+
         {/* </div> */}
-        {/* </div> */}
-        {/* <div className="me lg:flex lg:flex-row lg:p-10 lg:pb-20 lg:text-xl">
-          <div className="lg:ml-40 lg:w-1/2">
-            <p>A Little About Me--</p>
+        {/* <div className="">
+          <div className="">
+            <p>You can find me doing ....</p>
             <ul className="p-5">
-              <li>💃Favorite Activity To Do: Go to concerts</li>
+              <li>💃 Booking a concerts at NYC</li>
               <li>🎵 I like to play to the piano</li>
               <li>🎨 I like to do digital art</li>
               <li>💻 Love Genshin Impact</li>
-              <li>🍜Favorite Food is Ramen</li>
+              <li>🍜Favorite Food is dumplings</li>
+              <li> Making matcha </li>
             </ul>
           </div>
 
-          
           <iframe
             className=""
             src="https://open.spotify.com/embed/playlist/42e1NHVS6gTz87AC9NexwJ?utm_source=generator"
@@ -204,6 +259,7 @@ export default function Home() {
           ></iframe>
         </div> */}
         {/* <p className="text-center text-lg">Other Ways that I exist </p> */}
+
         <FooterAll />
       </main>
     </>
