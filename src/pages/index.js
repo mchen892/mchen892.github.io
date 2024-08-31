@@ -164,7 +164,7 @@ export default function Home() {
                   high school was in.
                 </p>
                 <p className="about-me-text">
-                  I&apos;m a current Senior at{" "}
+                  I&apos;m a current senior at{" "}
                   <Link href="https://infosci.cornell.edu/" target="_blank">
                     <span style={{ textDecoration: "underline" }}>
                       Cornell University
