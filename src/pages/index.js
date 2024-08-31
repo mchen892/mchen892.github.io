@@ -164,7 +164,7 @@ export default function Home() {
                   high school was in.
                 </p>
                 <p className="about-me-text">
-                  I&apos;m a current junior at{" "}
+                  I&apos;m a current Senior at{" "}
                   <Link href="https://infosci.cornell.edu/" target="_blank">
                     <span style={{ textDecoration: "underline" }}>
                       Cornell University
@@ -174,7 +174,7 @@ export default function Home() {
                   Interactive technology with a minor in computer science.
                 </p>
                 <p className="about-me-text">
-                  And this summer, I&apos;m currently an incoming{" "}
+                  Last summer, I interned at {" "}
                   <Link
                     href="https://www.verizon.com/fullstack"
                     target="_blank"
@@ -182,8 +182,7 @@ export default function Home() {
                     <span style={{ textDecoration: "underline" }}>
                       fullstack developer at Verizon
                     </span>{" "}
-                  </Link>
-                  .
+                  </Link>.
                 </p>
                 <p className="about-me-text">
                   On campus, I&apos;m a software engineer that is creating a
