@@ -3,16 +3,6 @@ import FooterAll from "../../components/footer";
 import Link from "next/link";
 import Image from "next/image";
 import me from "../../public/images/pfp.jpeg";
-import cake from "../../public/images/cake.jpg";
-import shrimp from "../../public/images/shrimp.jpg";
-import tree from "../../public/images/tree.jpg";
-import unami from "../../public/images/unami.jpg";
-import prettypic from "../../public/images/prettypic.jpg";
-import snow from "../../public/images/snowphoto.jpg";
-import downArrow from "../../public/images/downArrow.png";
-import friends from "../../public/images/friends.jpg";
-import skate from "../../public/images/skate.jpg";
-import wecode from "../../public/images/wecode.jpg";
 import MobileNav from "../../components/sideNavBar";
 import HomeImages from "../../components/homeImage";
 import React, { useState, useEffect } from "react";
@@ -91,9 +81,9 @@ export default function Home() {
                 <strong>Currently... </strong>
               </h1>
               <Resumetext
-                position="Incoming Fullstack Developer Intern"
-                company="Verizon"
-              />
+                position="Robotics TA"
+                company="Cornell University"
+                />
               <Resumetext
                 position="Software Engineer"
                 company="Engineering For Sustainability World"
@@ -113,7 +103,7 @@ export default function Home() {
               >
                 <strong>Previously I've been...</strong>
               </h1>
-              <Resumetext position="Software Engineer" company="Verizon" />
+              <Resumetext position="Full Stack Developer" company="Verizon" />
               <li>
                 Created a website for Verizon to identify threats and visualize
                 networks easier
@@ -123,7 +113,7 @@ export default function Home() {
                 company="Factor Earth"
               />
               <li>
-                Refactored the a codebase for their prroduct and automated a
+              Refactored a codebase for their product and automated a
                 tagging system
               </li>
               <Resumetext
@@ -220,45 +210,17 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* <div className="mx-auto ">
-            <h2 className="text-center text-xl">
-              I like to do almost everything
-            </h2>
-        <HomeImages
-                img={prettypic}
-                img2={friends}
-                img3={shrimp}
-                altmessage={"picture of cornell"}
-                altmessage2={"picture of tree"}
-                altmessage3={"picture of snow"}
-              />
-        </div> */}
-
-        {/* </div> */}
-        {/* <div className="">
-          <div className="">
-            <p>You can find me doing ....</p>
-            <ul className="p-5">
-              <li>💃 Booking a concerts at NYC</li>
-              <li>🎵 I like to play to the piano</li>
-              <li>🎨 I like to do digital art</li>
-              <li>💻 Love Genshin Impact</li>
-              <li>🍜Favorite Food is dumplings</li>
-              <li> Making matcha </li>
-            </ul>
-          </div>
-
-          <iframe
-            className=""
-            src="https://open.spotify.com/embed/playlist/42e1NHVS6gTz87AC9NexwJ?utm_source=generator"
-            width="100%"
-            height="352"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
-        </div> */}
-        {/* <p className="text-center text-lg">Other Ways that I exist </p> */}
+        {/* <section>
+              <div>
+                <h2>You can find me...</h2>
+                <p></p>
+              </div>
+            <div>
+              <p>eating good food and reviewing them (Yelp Elite Squad)</p>
+              <p>going to concerts and listening to my fave artsits</p>
+              <p>doing something creative (sticker collection)</p>
+            </div>
+        </section> */}
 
         <FooterAll />
       </main>

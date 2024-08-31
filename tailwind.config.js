@@ -14,7 +14,8 @@ module.exports = {
       },
       colors: {
         'light-purp': '#C9C2CF',
-        'light-purp-text': '#9987AD'
+        'light-purp-text': '#9987AD',
+        'lavendar': '#E6E6FA'
       },
       fontSize: {
         'big-xl': '15em'

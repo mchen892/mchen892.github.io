@@ -5,7 +5,7 @@ import ProjectTemp from "../../components/projectTemp";
 import esw from "../../public/images/esw.png";
 import cssa from "../../public/images/cssa_website.png";
 import arduino from "../../public/images/arduino.png";
-import website from "../../public/images/personal.jpg";
+import website from "../../public/images/personal.png";
 import bobatalk from "public/images/bobatalks.png";
 import hungryline from "public/images/hungryline.png";
 
@@ -21,14 +21,40 @@ export default function Home() {
           <main>
             <MobileNav />
             <section className="text-center mt-2 pt-5">
-            <h2 className="text-3xl text-center font-semibold p-5 mb-8">Projects</h2>
-
+              <div>
+                <h2 className="text-3xl text-center font-semibold p-5 mb-8">Projects</h2>
+              </div>
               <div className="project-view">
-                <ProjectTemp link='https://www.maggiechen.org/'img={website} altmessage="Personal website image" title="Personal Website" caption="Used NextJS, Tailwind, HTML, and CSS" />
-                <ProjectTemp img={esw} altmessage="Esw website image" title="Engineer's For Sustainability Website" caption="Used Plotly Dash, Bootstrap components, CSS, Figma for the website. Used pandas for fumehood automations." />
-                <ProjectTemp link='https://github.com/mchen892/led-clock'img={arduino} altmessage="Arduino LED Clock" title="Arduino LED Clock" caption="Used Arduino to create this" />
-                <ProjectTemp link='https://survival-guide.netlify.app/ 'img={bobatalk} altmessage="BobaTalk website image" title="BobaTalk's College Survival Website" caption="Used React and CSS" />
-                <ProjectTemp link='https://github.com/mchen892/hungry-line' img={hungryline} altmessage="Hungry Line app image" title="Hungry Line App" caption="Used React Native, Expo, and Firebase" />
+                <ProjectTemp 
+                  link='https://www.maggiechen.org/'
+                  img={website} altmessage="Personal website image" 
+                  title="🌞 Personal Website " 
+                  list={['NextJS', 'Tailwind']} 
+                  caption="Personal website to showcase my portfolio and to learn more about me"/>
+                <ProjectTemp 
+                  img={esw} 
+                  altmessage="Esw website image" 
+                  title="🌿 Engineer's For Sustainability Website " 
+                  list={['Plotly Dash', 'Bootstrap', 'Figma', 'Pandas']}
+                  caption="Website to reduce fumehood energy on Cornell University" />
+                <ProjectTemp 
+                  link='https://github.com/mchen892/led-clock'
+                  img={arduino} altmessage="Arduino LED Clock" 
+                  title="⏰ Arduino LED Clock" 
+                  list={['Arduino']}
+                  caption="Made an arduino clock that will be placed at Cornell University in Olin Library" />
+                <ProjectTemp 
+                  link='https://survival-guide.netlify.app/'
+                  img={bobatalk} altmessage="BobaTalk website image" 
+                  title="🧋 BobaTalk's College Survival Website" 
+                  list={['React', 'CSS']}
+                  caption="A bobatalks website for highschoolers, who can browse through mentors and resources" />
+                <ProjectTemp 
+                  link='https://github.com/mchen892/hungry-line' 
+                  img={hungryline} altmessage="Hungry Line app image" 
+                  title="📱Hungry Line App" 
+                  list={['React Native', 'Expo', 'Firebase']}
+                  caption="An application that reduces waiting in line during eating periods and promotes productivity" />
               </div>
             </section>
             <FooterAll />

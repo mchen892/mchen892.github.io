@@ -108,6 +108,8 @@ footer {
   flex-direction: col;
   flex-wrap: wrap;
   justify-content: left;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .about-me-part {
@@ -178,6 +180,9 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
-
+  .project-view {
+    margin-right: auto;
+    margin-left: auto;
+    }
   
 } 
