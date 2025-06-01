@@ -43,9 +43,9 @@ const MobileNav = () => {
                   Project
                 </Link>
               </li>
-              {/* <li className='lg:pr-8'>
-            <Link href="/journal" className='text-xl hover:underline'>Journal</Link>
-          </li> */}
+              <li className='lg:pr-8'>
+            <Link href="/gallery" className='text-xl hover:underline'>Gallery</Link>
+          </li>
               <li className="lg:pr-8">
                 <Link
                   href="https://drive.google.com/file/d/14QF41uevB5YXs2rrJq93zI59LNuifU0n/view?usp=sharing"

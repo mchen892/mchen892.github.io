@@ -1,16 +1,13 @@
 import Head from "next/head";
-import FooterAll from "../../components/footer";
+import FooterAll from "../components/footer";
 import Link from "next/link";
 import Image from "next/image";
-import me from "../../public/images/pfp.jpeg";
-import MobileNav from "../../components/sideNavBar";
-import HomeImages from "../../components/homeImage";
+import me from "../../public/images/pfp.jpg";
+import MobileNav from "../components/sideNavBar";
 import React, { useState, useEffect } from "react";
-import RotatingText from "@/components/rotate";
+import RotatingText from "@/src/components/rotate";
 import { useMediaQuery } from "react-responsive";
-import { Island_Moments } from "next/font/google";
-import { BsAlignBottom, BsArrowDown } from "react-icons/bs";
-import Resumetext from "@/components/resume_text";
+import { BsArrowDown } from "react-icons/bs";
 
 export default function Home() {
   const isLargeScreen = useMediaQuery({ query: "(min-width: 1024px)" });
@@ -72,68 +69,9 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="current">
-            <div className="current-text text-wrap">
-              <h1
-                className="text-light-purp-text curr-text"
-                style={{ fontSize: "1.3em", paddingBottom: ".5em" }}
-              >
-                <strong>Currently... </strong>
-              </h1>
-              <Resumetext
-                position="Robotics TA"
-                company="Cornell University"
-                />
-              <Resumetext
-                position="Software Engineer"
-                company="Engineering For Sustainability World"
-              />
-              <li>
-                Creating a fumehood dashboard for Cornell for them to become
-                more Sustainable
-              </li>
-
-              <h1
-                className="text-light-purp-text text-xl curr-text"
-                style={{
-                  paddingTop: ".5em",
-                  fontSize: "1.3em",
-                  paddingBottom: ".5em",
-                }}
-              >
-                <strong>Previously I've been...</strong>
-              </h1>
-              <Resumetext position="Full Stack Developer" company="Verizon" />
-              <li>
-                Created a website for Verizon to identify threats and visualize
-                networks easier
-              </li>
-              <Resumetext
-                position="Website Application Developer"
-                company="Factor Earth"
-              />
-              <li>
-              Refactored a codebase for their product and automated a
-                tagging system
-              </li>
-              <Resumetext
-                position="IBM Accelerate Software Track"
-                company="IBM"
-              />
-              <li>Learned front-end, back-end, react, and more</li>
-              <Resumetext
-                position="Co-President"
-                company="Cornell Rubber Ducky Club"
-              />
-              <li>Planned social events and managed the team</li>
-            </div>
-          </div>
-        </section>
-
-        <section>
           <div className="about-me-part">
             <div className="about-me-photo">
-              <Image src={me} className=""></Image>
+              <Image src={me} height={250} className=""></Image>
             </div>
 
             <div
@@ -164,63 +102,44 @@ export default function Home() {
                   high school was in.
                 </p>
                 <p className="about-me-text">
-                  I&apos;m a current senior at{" "}
+                  I studied{" "}
                   <Link href="https://infosci.cornell.edu/" target="_blank">
                     <span style={{ textDecoration: "underline" }}>
-                      Cornell University
+                      Information Science
                     </span>
                   </Link>{" "}
-                  studying information science with a concentration in
-                  Interactive technology with a minor in computer science.
+                  at Cornell University with a concentration in
+                  Interactive technology and a minor in computer science.
                 </p>
+                
                 <p className="about-me-text">
-                  Last summer, I interned at {" "}
+                  I'm currently working as a {" "}
                   <Link
                     href="https://www.verizon.com/fullstack"
                     target="_blank"
                   >
                     <span style={{ textDecoration: "underline" }}>
                       fullstack developer at Verizon
-                    </span>{" "}
+                    </span>
                   </Link>.
                 </p>
-                <p className="about-me-text">
-                  On campus, I&apos;m a software engineer that is creating a
-                  fumehood dashboard for Cornell that will help reduce energy
-                  usuage with{" "}
-                  <Link href="https://esw.org" target="_blank">
-                    <span style={{ textDecoration: "underline" }}>
-                      Engineering for Sustainability World (ESW)
-                    </span>
-                  </Link>
-                </p>
-                <div style={{ paddingBottom: "3em" }}>
-                  <Link
-                    href="https://topmate.io/maggiechen"
-                    target="_blank"
-                    className="about-me-text"
-                  >
-                    <span className="hover:underline">
-                      Book a coffee chat with me ☕️
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* <section>
-              <div>
+                <div>
                 <h2>You can find me...</h2>
                 <p></p>
               </div>
             <div>
-              <p>eating good food and reviewing them (Yelp Elite Squad)</p>
-              <p>going to concerts and listening to my fave artsits</p>
-              <p>doing something creative (sticker collection)</p>
-            </div>
-        </section> */}
+            <ul style={{ listStyleType: "circle", paddingLeft: "20px" }}>
+                    <li>Sewing dresses at home</li>
+                    <li>Going to concerts and listening to my favorite artists</li>
+                    <li>Doing something creative (sticker collection)</li>
+                    <li>Painting</li>
+                  </ul>
 
+            </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <FooterAll />
       </main>
     </>
